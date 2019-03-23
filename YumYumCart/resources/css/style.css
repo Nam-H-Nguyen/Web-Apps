@@ -1,3 +1,7 @@
+/*-----------------------------------------------------*/
+/* BASIC SETUP */
+/*-----------------------------------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -12,10 +16,9 @@ html {
     text-rendering: optimizeLegibility; /* ensure optimal rendering of text */
 }
 
-.row {
-    max-width: 1140px;
-    margin: 0 auto; /* Top bottom 0, Right Left auto */
-}
+/*-----------------------------------------------------*/
+/* HEADER */
+/*-----------------------------------------------------*/
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/japan-sushi-chopsticks.jpg); /* Make background image transparent in a black gradient */
@@ -33,6 +36,17 @@ header {
     transform: translate(-50%, -50%); /* Translate half of its width and height -> up and left */
 }
 
+/*-----------------------------------------------------*/
+/* REUSABLE COMPONENTS */
+/*-----------------------------------------------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto; /* Top bottom 0, Right Left auto */
+}
+
+/* -----HEADER----- */
+
 h1 {
     margin-top: 0; /* Without this line, there will be a margin gap on the top of the hero image*/
     margin-bottom = 20px;
@@ -43,6 +57,8 @@ h1 {
     word-spacing: 4px;
     
 }
+
+/* -----BUTTON----- */
 
 /* Button a element links at a normal state, unvisited, unclicked. Don't want visited and non-visited to look different */ 
 .btn:link,
