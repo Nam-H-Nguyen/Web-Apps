@@ -11,3 +11,9 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility; /* ensure optimal rendering of text */
 }
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto; /* Top bottom = 0, Left Right = auto */
+    
+}
