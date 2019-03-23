@@ -73,26 +73,61 @@ h1 {
 
 .btn-full:link,
 .btn-full:visited {
-    background-color: #2ecc71;
-    border: 1px solid #2ecc71;
+    background-color: #df0038;
+    border: 1px solid #df0038;
     color: #fff;
     margin-right: 15px;
 }
 
 .btn-ghost:link,
 .btn-ghost:visited {
-    border: 1px solid #2ecc71;
-    color: #2ecc71;
+    border: 1px solid #df0038;
+    color: #fff;
 }
 
 .btn:hover,
 .btn:active {
-    background-color: #47d583;
-    border: 1px solid #47d583;
+    background-color: #ff0242;
+    border: 1px solid #ff0242;
 }
 
 /* Button on hover and clicked, */
 .btn-ghost:hover,
 .btn-ghost:active {
     color: #fff;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
+}
+
+/* all li in main navigation */
+.main-nav li { 
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 90%;
+    border-bottom: 2px solid transparent; /* Make the border transparent until it is hovered */
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 3px solid #df0038;
 }
