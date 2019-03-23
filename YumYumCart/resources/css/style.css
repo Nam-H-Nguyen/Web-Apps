@@ -14,6 +14,69 @@ html {
 
 .row {
     max-width: 1140px;
-    margin: 0 auto; /* Top bottom = 0, Left Right = auto */
+    margin: 0 auto; /* Top bottom 0, Right Left auto */
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/japan-sushi-chopsticks.jpg); /* Make background image transparent in a black gradient */
+    background-size: cover; /* Make img the size of the cover */
+    background-position: center; /* Make img centered even as you resize browser window */
+    height: 100vh; /* Make img 100% of viewport */
+
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Translate half of its width and height -> up and left */
+}
+
+h1 {
+    margin-top: 0; /* Without this line, there will be a margin gap on the top of the hero image*/
+    margin-bottom = 20px;
+    color: #fff;
+    font-size: 250%; /* Relative to size of html font 20px */
+    font-weight: 250;
+    text-transform: uppercase;
+    word-spacing: 4px;
     
+}
+
+/* Button a element links at a normal state, unvisited, unclicked. Don't want visited and non-visited to look different */ 
+.btn:link,
+.btn:visited {
+    display: inline-block; /* Now can have padding and margin because a element is an inline element */
+    padding: 10px 30px; /* Top Bottom 10px, Right Left 30px */
+    text-decoration: none; /* Get rid of link underline */
+    border-radius: 200px; /* Round of the button */
+    color: #fff; /* White text color */
+    transition: background-color 0.2s, border 0.2s, color 0.2s; /* Make transition of colors in 0.2 seconds */
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #2ecc71;
+    border: 1px solid #2ecc71;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #47d583;
+    border: 1px solid #47d583;
+}
+
+/* Button on hover and clicked, */
+.btn-ghost:hover,
+.btn-ghost:active {
+    color: #fff;
 }
