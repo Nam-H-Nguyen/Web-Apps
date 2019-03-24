@@ -46,17 +46,76 @@ header {
     margin: 0 auto; /* Top bottom 0, Right Left auto */
 }
 
+section {
+    padding: 80px 0;
+    
+}
+
+.box {
+    padding: 1%;
+}
+
 /* -----HEADER----- */
+
+h1,
+h2,
+h3 {
+    font-weight: 250;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
 
 h1 {
     margin-top: 0; /* Without this line, there will be a margin gap on the top of the hero image*/
     margin-bottom = 20px;
     color: #fff;
     font-size: 250%; /* Relative to size of html font 20px */
-    font-weight: 250;
-    text-transform: uppercase;
     word-spacing: 4px;
-    
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Adding a line color after the h2 element */
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #df0038;
+    content: " "; /* make sure nothing is in this */
+    width: 100px;
+    margin: 30px auto 0 auto;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+/* -----PARAGRAPHS----- */
+.section-text {
+    line-height: 150%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 150%;
+}
+
+/* -----ICONS----- */
+.icon-big {
+    font-size: 350%;
+    display: block;
+    color: #df0038;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 /* -----BUTTON----- */
@@ -131,4 +190,28 @@ h1 {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 3px solid #df0038;
+}
+
+/*-----------------------------------------------------*/
+/* SECTION: MEAL SHOWCASE */
+/*-----------------------------------------------------*/
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left; /* float images side by side */
+    width:25%; /* Have 4 images side by side so needs to be 25% */
+}
+
+.meal-photo {
+    width: 100%; /* has exact same width as its parents */
+    margin: 0; /* overriding normalize css */
+}
+
+.meal-photo img {
+    width: 100%; /* ensure image is as wide as its container */
+    height: auto; /* height adjust according to width */
 }
