@@ -303,3 +303,17 @@ h3 {
     width: auto;
     margin-right: 10px;
 }
+
+/*-----------------------------------------------------*/
+/* SECTION: CITIES OF OPERATION */
+/*-----------------------------------------------------*/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-info {
+    margin-bottom: 5px;
+}
