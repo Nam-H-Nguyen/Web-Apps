@@ -107,6 +107,22 @@ h3 {
     margin-bottom: 15px;
 }
 
+/* -----LINKS----- */
+a:link,
+a:visited {
+    color: #df0038;
+    text-decoration: none;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #df0038;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:active,
+a:hover {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
 /* -----BUTTON----- */
 
 /* Button a element links at a normal state, unvisited, unclicked. Don't want visited and non-visited to look different */ 
@@ -202,6 +218,19 @@ h3 {
     color: #df0038;
     margin-bottom: 10px;
     text-align: center;
+}
+
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #df0038;
+    font-size: 120%;
+    margin-right: 7px;
+    /* align icons with text */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -6px;
 }
 
 /*-----------------------------------------------------*/
@@ -304,6 +333,10 @@ h3 {
     margin-right: 10px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+    border: 0;
+}
 /*-----------------------------------------------------*/
 /* SECTION: CITIES OF OPERATION */
 /*-----------------------------------------------------*/
