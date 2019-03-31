@@ -60,9 +60,11 @@ header {
 
 section {
     padding: 80px 0;
-    
 }
 
+footer {
+    padding: 170px 0;
+}
 .box {
     padding: 1%;
 }
@@ -487,4 +489,82 @@ input[type=checkbox] {
 /* Get rid of Google Chrome blue highlight upon clicking on the inputs */
 *:focus {
     outline: none;
+}
+
+footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/dishes.jpg);
+    background-size: cover;
+    background-position: bottom;
+    font-size: 80%
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    float: right;
+    list-style: none;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: white;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #df0038;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-logo-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-logo-twitter:hover {
+    color: #00aced;
+}
+
+.ion-logo-instagram:hover {
+    color: #dd4b39;
+}
+
+.ion-logo-linkedin:hover {
+    color: #517fa4;
+}
+
+.ion-logo-facebook,
+.ion-logo-twitter,
+.ion-logo-instagram,
+.ion-logo-linkedin {
+    transition: color 0.2s;
+}
+
+footer p {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0;
 }
