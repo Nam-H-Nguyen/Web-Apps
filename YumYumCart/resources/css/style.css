@@ -127,7 +127,8 @@ a:hover {
 
 /* Button a element links at a normal state, unvisited, unclicked. Don't want visited and non-visited to look different */ 
 .btn:link,
-.btn:visited {
+.btn:visited,
+input[type=submit] {
     display: inline-block; /* Now can have padding and margin because a element is an inline element */
     padding: 10px 30px; /* Top Bottom 10px, Right Left 30px */
     text-decoration: none; /* Get rid of link underline */
@@ -137,7 +138,8 @@ a:hover {
 }
 
 .btn-full:link,
-.btn-full:visited {
+.btn-full:visited,
+input[type=submit] {
     background-color: #df0038;
     border: 1px solid #df0038;
     color: #fff;
@@ -151,7 +153,9 @@ a:hover {
 }
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active {
     background-color: #ff0242;
     border: 1px solid #ff0242;
 }
@@ -450,4 +454,37 @@ cite img {
 
 .plan-box ul li {
     padding: 5px 0;
+}
+
+/*-----------------------------------------------------*/
+/* SECTION: PLAN SIGN UP */
+/*-----------------------------------------------------*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto; /* center form in the middle */
+}
+
+/* Select only the input type of text and email only */
+input[type=text],
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
+}
+
+/* Get rid of Google Chrome blue highlight upon clicking on the inputs */
+*:focus {
+    outline: none;
 }
