@@ -147,7 +147,7 @@ a:hover {
 .btn-ghost:link,
 .btn-ghost:visited {
     border: 1px solid #df0038;
-    color: #fff;
+    color: #df0038;
 }
 
 .btn:hover,
@@ -394,3 +394,60 @@ cite img {
     vertical-align: middle;
 }
 
+/*-----------------------------------------------------*/
+/* SECTION: PLAN SIGN UP */
+/*-----------------------------------------------------*/
+
+.section-sign-up {
+    background-color: #f0f0f0;   
+}
+
+.plan-box {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #efefef;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    border: 0;
+}
+
+.plan-box
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.plan-box div:last-child {
+    text-align: center;    
+}
+
+.plan-price {
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #df0038;
+}
+
+/* Child of plan price: format month text*/
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+}
