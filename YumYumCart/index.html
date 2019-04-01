@@ -27,6 +27,7 @@
             <nav>
                 <div class="row">
                     <img src="resources/img/yum_logo.svg" alt="YumYumCart logo" class="logo">
+                    <img src="resources/img/yum_logo.svg" alt="YumYumCart logo" class="logo-sticky">
                     <ul class="main-nav">
                         <li><a href="#">Food delivery</a></li>
                         <li><a href="#">How it works</a></li>
@@ -45,7 +46,7 @@
         </header>
 
         <!--Section: Company features and Why Choose YumYumCart-->
-        <section class="section-features">
+        <section class="section-features js--section-features">
             <div class="row">
                 <!--HTML Unicode &mdash is for special characters. This dash is bigger than a normal dash-->
                 <h2>Get yummy food fast &mdash; not yucky fast food.</h2>
@@ -443,8 +444,9 @@
                 </p>
             </div>
         </footer>
-    </body>
 
+    <!--JS scripts called after the rest of the webpage is loaded-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!--Respond JS allows older browser version compatibility-->
     <script src="https://cdn.jsdelivr.net/npm/respond@0.9.0/main.min.js"></script>
     <!--HTML5 sectioning elements in legacy Internet Explorer and provides basic
@@ -452,18 +454,14 @@
     <script src="https://cdn.jsdelivr.net/combine/npm/respond@0.9.0,npm/html5shiv@3.7.3"></script>
     <!--JavaScript utility that emulates CSS3 pseudo-classes and attribute selectors in Internet Explorer 6-8 -->
     <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+    <!--JQuery add functionality to scrolling down on webpage-->
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <script src="resources/js/script.js"></script>
+
+
+    </body>
+
+
+
 
 </html>
-
-
-<!--Contact form
-Title: We're happy to hear from you
-
-Fields to include:
-Name
-Email
-How did you find us?
-Newsletter
-Drop us a line
-
--->

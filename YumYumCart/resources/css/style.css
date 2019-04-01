@@ -181,6 +181,15 @@ input[type=submit]:active {
     margin-top: 20px;
 }
 
+.logo-sticky {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin: 5px 0;
+}
+
+/* main nav */
 .main-nav {
     float: right;
     list-style: none;
@@ -208,6 +217,36 @@ input[type=submit]:active {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 3px solid #df0038;
+}
+
+/*  Sticky navigation bar */
+.sticky {
+  position: fixed; /* trick to make nav stick */
+  top: 0;
+  left: 0;
+  width: 100%; /* occupy whole browser width */
+  background-color: rgba(255, 255, 255, 0.98); /* make background slightly transparent */
+  box-shadow: 0 2px 2px #efefef; /* horiz, vertical, blur, color*/
+  z-index: 9999; /* allow element to always be in front of overlapping elements */
+}
+
+/* If the logo is in the sticky nav, display it and hide the main logo */
+.sticky .logo { display: none; }
+.sticky .logo-sticky { display: block; }
+
+.sticky .main-nav {
+  margin-top: 15px;
+}
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 10px 0;
+    color: #555;
+}
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 60px;
 }
 
 /* -----PARAGRAPHS----- */
