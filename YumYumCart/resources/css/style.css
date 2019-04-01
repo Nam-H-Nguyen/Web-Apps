@@ -226,7 +226,8 @@ input[type=submit]:active {
   left: 0;
   width: 100%; /* occupy whole browser width */
   background-color: rgba(255, 255, 255, 0.98); /* make background slightly transparent */
-  box-shadow: 0 2px 2px #efefef; /* horiz, vertical, blur, color*/
+  -webkit-box-shadow: 0 2px 2px #efefef;
+          box-shadow: 0 2px 2px #efefef; /* horiz, vertical, blur, color*/
   z-index: 9999; /* allow element to always be in front of overlapping elements */
 }
 
@@ -623,4 +624,28 @@ footer p {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 0;
+}
+
+/*-----------------------------------------------------*/
+/* ANIMATIONS */
+/*-----------------------------------------------------*/
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+  opacity: 0; /* Make element invisible instead of display none */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+}
+
+/* Want wp-1 and animation at the same time */
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+  opacity: 1;
+}
+
+.js--wp-4.animated {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
