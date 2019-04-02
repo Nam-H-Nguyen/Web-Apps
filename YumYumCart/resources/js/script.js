@@ -37,7 +37,7 @@ $(document).ready(function () {
 
   // Animations on scrolls
   $('.js--wp-1').waypoint(function (direction) {
-    $('.js--wp-1').addClass('animated fadeInUp');
+    $('.js--wp-1').addClass('animated fadeInUpBig');
   }, {
     offset: '50%'
   });
@@ -58,5 +58,20 @@ $(document).ready(function () {
     $('.js--wp-4').addClass('animated rubberBand');
   }, {
     offset: '50%'
+  });
+
+  // Mobile navigation
+  $('.js--nav-icon').click(function () {
+    var nav = $('.js--main-nav');
+    var icon = $('.js--nav-icon i');
+    // Open and close a box .200 seconds
+    nav.slideToggle(200);
+    if (icon.hasClass('ion-ios-menu')) {
+      icon.addClass('ion-ios-close');
+      icon.removeClass('ion-ios-menu');
+    } else {
+      icon.addClass('ion-ios-menu');
+      icon.removeClass('ion-ios-close');
+    }
   });
 });

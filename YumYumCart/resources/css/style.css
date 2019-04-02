@@ -35,8 +35,8 @@ html, body {
 /*-----------------------------------------------------*/
 
 header {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/japan-sushi-chopsticks.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/japan-sushi-chopsticks.jpg); /* Make background image transparent in a black gradient */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(img/japan-sushi-chopsticks-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(img/japan-sushi-chopsticks-min.jpg); /* Make background image transparent in a black gradient */
     background-size: cover; /* Make img the size of the cover */
     background-attachment: fixed;
     background-position: center; /* Make img centered even as you resize browser window */
@@ -219,6 +219,18 @@ input[type=submit]:active {
     border-bottom: 3px solid #df0038;
 }
 
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer; /* If did not add href in the a tag to show the cursor when hover */
+  display: none; /* hide until a certain width in browser */
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
+}
+
 /*  Sticky navigation bar */
 .sticky {
   position: fixed; /* trick to make nav stick */
@@ -238,6 +250,7 @@ input[type=submit]:active {
 .sticky .main-nav {
   margin-top: 15px;
 }
+
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     padding: 10px 0;
@@ -415,8 +428,8 @@ input[type=submit]:active {
 /*-----------------------------------------------------*/
 
 .section-testimonials {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/celebrate-background.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/celebrate-background.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(img/celebrate-background-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(img/celebrate-background-min.jpg);
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
@@ -546,8 +559,8 @@ input[type=checkbox] {
 }
 
 footer {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/dishes.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/dishes.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(img/dishes-min.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/dishes-min.jpg);
     background-size: cover;
     background-position: bottom;
     font-size: 80%
